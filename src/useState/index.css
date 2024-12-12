@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #1c2833;
+  --secondary-color: #fff;
+  --bg-color: #f2f3f4;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.container {
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="phone"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0.6rem;
+  color: #0eb7f4;
+}
+
+label,
+p {
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  .container {
+    padding: 15px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    padding: 10px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
